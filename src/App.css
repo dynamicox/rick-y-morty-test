@@ -1,38 +1,82 @@
-.App {
-  text-align: center;
+.main__navbar {
+  margin: 0 0 2em 0;
+  padding: 1px 0.6em;
+  background-color: rgba(238, 255, 0, 0.548);
+  height: 100%;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.main__card {
   display: flex;
-  flex-direction: column;
-  align-items: center;
+  border: 1px solid rgba(0, 0, 0, 0.288);
+  border-radius: 1%;
+  background-color: rgba(128, 128, 128, 0.267);
+}
+
+.main__searchBar {
+  width: 100%;
+  display: flex;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  align-items: center;
 }
 
-.App-link {
-  color: #61dafb;
+.main__cardContainer {
+  padding: 0 1em;
+  margin-top: 2em;
+  display: grid;
+  grid-template-columns: 33% 33% auto;
+  grid-template-rows: 200px 200px 200px;
+  grid-row-gap: 10px;
+  grid-column-gap: 25px;
+  justify-content: center;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.main__pagination {
+  display: flex;
+  padding: 0 2em;
+  justify-content: space-between;
+  align-items: center;
+}
+.main__cardBody {
+  position: relative;
+  width: 100%;
+}
+.status__badge {
+  position: absolute;
+  right: 10px;
+  bottom: 10px;
+  border: 1px solid rgba(0, 0, 0, 0.253);
+  border-radius: 15%;
+  padding: 0.4em;
+}
+
+.label__green {
+  border: 1px solid rgba(30, 199, 38, 0.253);
+  background-color: rgba(24, 214, 24, 0.24);
+}
+.label__red {
+  border: 1px solid rgba(199, 30, 30, 0.253);
+  background-color: rgba(214, 24, 24, 0.24);
+}
+button {
+  appearance: none;
+  padding: 1em;
+  border: 1px solid rgba(49, 48, 48, 0.466);
+  margin: 3em 0;
+}
+
+h5 {
+  padding-left: 0.4em;
+}
+
+button:hover {
+  cursor: pointer;
+}
+
+img {
+  object-fit: cover;
+}
+
+input {
+  padding: 0.6em;
+  width: 33%;
 }
